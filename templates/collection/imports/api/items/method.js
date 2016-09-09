@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { check } from 'meteor/check';
-let {{ collection.pascalName }} = new Meteor.Collection('{{ collection.name }}');
+import {{ collection.pascalName }} from './{{ collection.name }}.js';
 
 let {{ method.name }} = {
     name: '{{ collection.name }}.{{ method.name }}',
