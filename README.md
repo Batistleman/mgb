@@ -18,6 +18,14 @@ Because we all benefit from having comparable code bases. If the community choos
 
     mgb
 
+## Valid Actions
+
+    create                                     - Initialize a basic Meteor project
+    
+    Some info on what you can add:
+    add collection [name]                      - Add a collection, name has to be lowercase plural, like: tasks, items, ...
+    add method [collectionName] [methodName]   - Add a method to a collection
+
 ## License
 
 MIT
