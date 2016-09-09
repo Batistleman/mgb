@@ -3,7 +3,7 @@
 var helpers = require('../lib/helpers');
 var create = require('../lib/create');
 var add = require('../lib/add');
-var analyse = require('../lib/analyse');
+var analyze = require('../lib/analyze');
 
 console.log('-------------------------------------------------------------');
 console.log('Meteor Guide Builder - a tool to setup a Meteor project,');
@@ -15,8 +15,8 @@ var action = process.argv[2];
 
 try {
     switch (action) {
-        case 'analyse':
-            analyse.default();
+        case 'analyze':
+            analyze.default();
             break;
         case 'create':
             create.default();

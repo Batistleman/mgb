@@ -18,7 +18,7 @@ Because we all benefit from having comparable code bases. If the community choos
 
     mgb
         create                                     - Initialize a basic Meteor project
-        analyse                                    - Analyse the code structure of your application
+        analyze                                    - Analyze the code structure of your application
         
         Some info on what you can add:
         add collection [name]                      - Add a collection, name has to be lowercase plural, like: tasks, items, ...
@@ -32,9 +32,9 @@ Because we all benefit from having comparable code bases. If the community choos
 
 This will create a new meteor application for you with some basic scaffolding. (Structure is taken from: https://github.com/dburles/meteor-guide-starter-react)
 
-### Analyse:
+### Analyze:
 
-    mgb analyse
+    mgb analyze
     
 The goal of this command is to give you some feedback on your file structure. Like what folder should be present, what file should your project include.
 
