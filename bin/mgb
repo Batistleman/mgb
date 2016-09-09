@@ -1,0 +1,50 @@
+#!/usr/bin/env node
+
+var helpers = require('../lib/helpers');
+var create = require('../lib/create');
+var add = require('../lib/add');
+
+console.log('-------------------------------------------------------------');
+console.log('Meteor Guide Builder - a tool to setup a Meteor project,');
+console.log('add collections, add pages and more. ');
+console.log('All according to the Meteor Guide (https://guide.meteor.com/)');
+console.log('-------------------------------------------------------------\n');
+
+var action = process.argv[2];
+
+try {
+    switch (action) {
+        case 'create':
+            create.default();
+            break;
+        case 'add':
+            var type = process.argv[3];
+            switch(type){
+                case 'collection':
+                    var collectionName = process.argv[4];
+                    if(collectionName)
+                        add.collection(collectionName);
+                    else 
+                        helpers.printHelpAdd();
+                    break;
+                case 'method':
+                    var collectionName = process.argv[4];
+                    var methodName = process.argv[5];
+                    if(collectionName && methodName)
+                        add.method(collectionName, methodName);
+                    else
+                        helpers.printHelpAdd();
+                    break;
+                default:
+                    helpers.printHelpAdd();
+            }
+            break;
+        default:
+            helpers.printHelp();
+    }
+}
+catch(exception){
+    console.error(exception);
+    helpers.printHelp();
+}
+

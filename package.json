@@ -1,0 +1,22 @@
+{
+  "name": "mgb",
+  "version": "0.1.0",
+  "description": "Meteor Guid Builder - a tool to setup a Meteor project, add collections and more, all according to the Meteor Guid specifications",
+  "main": "index.js",
+  "bin": {
+    "mgb": "./bin/mgb"
+  },
+  "dependencies": {
+    "change-case": "~3.0.0",
+    "liquid-node": "~2.6.0",
+    "mkdirp": "^0.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/batistleman/mgb.git"
+  },
+  "author": "Batist Leman <batist.leman@gmail.com> (http://batistleman.com)",
+  "license": "MIT"
+}
+
+
